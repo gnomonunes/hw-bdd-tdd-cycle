@@ -87,7 +87,7 @@ RSpec.describe MoviesController, type: :controller do
       end
       it 'should redirect to the home page' do
         get :search_director, {id: '1'}
-        expect(response).to redirect_to root_path
+        expect(response).to redirect_to movies_path
       end
     end
   end
